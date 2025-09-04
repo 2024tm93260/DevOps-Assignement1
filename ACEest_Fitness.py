@@ -32,7 +32,7 @@ class FitnessTrackerApp:
 
         if not workout or not duration_str:
             messagebox.showerror("Error", "Please enter both workout and duration.")
-            return
+        return
 
         try:
             duration = int(duration_str)
@@ -56,4 +56,5 @@ class FitnessTrackerApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = FitnessTrackerApp(root)
+
     root.mainloop()
